@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    : Sell
+{% endblock %}
+
+{% block main %}
+    <div class="sell-container">
+        <form class="centered-form" action="/sell" method="post">
+            <div class="form-space">
+                <select name="symbol" class="select-symbol">
+                    <option disabled="" selected="">Symbol</option>
+                    {% for crypto in ownedCrypto %}
+                        <option value={{ crypto["cryptoSymbol"] }}>{{ crypto["cryptoSymbol"] | upper }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-space">
+                <input autocomplete="off" placeholder="Coins" name="coins" min="1" max="100,000" type="number" class="input-coins">
+            </div>
+            <button class="form-space sell-button" type="submit">Sell</button>
+        </form>
+    </div>
+{% endblock %}

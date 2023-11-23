@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    : Profile
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <header>
+            <h1>My Profile</h1>
+        </header>
+        <main>
+            <section class="profile-details">
+                <h2>Profile</h2>
+                <div class="details">
+                    <p>Username: <span>{{ username }}</span></p>
+                    <p>Cash Balance: <span>{{ cashBalance }}</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+{% endblock %}

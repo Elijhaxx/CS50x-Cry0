@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    : History
+{% endblock %}
+
+{% block main %}
+    <div class="history-container">
+        <h2>History of Transactions</h2>
+        <table class="transaction-table">
+            <thead>
+                <tr>
+                    <th>Crypto Symbol</th>
+                    <th>Coins</th>
+                    <th>Price</th>
+                    <th>Transacted</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in transactionHistory %}
+                    <tr>
+                        <td>{{ row["cryptoSymbol"] }}</td>
+                        <td>{{ row["Coins"] }}</td>
+                        <td>{{ row["Price"] }}</td>
+                        <td>{{ row["Transacted"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

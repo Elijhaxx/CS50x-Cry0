@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Cry0 {% block title %}{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link href="/static/cryptocurrency.ico" rel="icon">
+
+    <!-- CSS -->
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="link-rightalign">
+        <div>
+            {% if session["user_id"] %}
+            <ul class="no-bullet">
+                <!-- Homepage -->
+                <li><a href="/homepage">Homepage</a></li>
+                <!-- Quote -->
+                <li><a href="/quote">Quote</a></li>
+                <!-- Buy -->
+                <li><a href="/buy">Buy</a></li>
+                <!-- Sell -->
+                <li><a href="/sell">Sell</a></li>
+                <!-- History -->
+                <li><a href="/history">History</a></li>
+                <!-- Profile -->
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+            <ul class="no-bullet">
+                <!-- Log out -->
+                <li><a href="/logout">Log Out</a></li>
+            </ul>
+            {% else %}
+            <ul class="no-bullet">
+                <!-- Register -->
+                <li><a href="/register">Register</a></li>
+                <!-- Login -->
+                <li><a href="/login">Login</a></li>
+            </ul>
+            {% endif %}
+        </div>
+    </nav>
+
+    {% if get_flashed_messages() %}
+        <header class="flash-header">
+            <div id="flash-message" role="alert" class="flash-message">
+                {{ get_flashed_messages() | join(" ") }}
+            </div>
+        </header>
+    {% endif %}
+
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer>
+        &copy; 2023 Cry0. All rights reserved.
+    </footer>
+
+    <script>
+        // Get the flash message element
+        const flashMessage = document.getElementById('flash-message');
+    
+        // Function to hide the flash message after a delay
+        function hideFlashMessage() {
+            flashMessage.style.display = 'none';
+        }
+    
+        // Set timeout to hide the flash message after 5 seconds
+        setTimeout(hideFlashMessage, 5000);
+    </script>
+</body>
+</html>

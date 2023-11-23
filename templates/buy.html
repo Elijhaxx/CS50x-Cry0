@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    - Buy
+{% endblock %}
+
+{% block main %}
+    <form class="centered-form" action="/buy" method="post">
+        <h2 class="form-title">Buy Cryptocurrency</h2>
+        <div class="form-group">
+            <input autocomplete="off" autofocus name="cryptoName" placeholder="Cryptocurrency" type="text" class="buy-input">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus name="coins" min="0" max="1000" step="1" placeholder="Amount of Coins" type="number" class="buy-input">
+        </div>
+        <button class="buy-btn" type="submit">Buy</button>
+    </form>
+{% endblock %}

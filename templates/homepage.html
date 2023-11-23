@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    : Homepage
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h2 class="center-container">Portfolio - Cryptocurrency Holdings</h2>
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>Cryptocurrency</th>
+                    <th>Coins</th>
+                    <th>Current Price</th>
+                    <th>Total Value</th>
+                </tr>
+            </thead>
+            <!-- Display Owned Cryptocurrencies -->
+            <tbody>
+                {% for row in displayData %}
+                    <tr>
+                        <td>{{ row["cryptoName"] }} (<b>{{ row["cryptoSymbol"] }})</b></td>
+                        <td>{{ row["Coins"] }}</td>
+                        <td>{{ row["coinPrice"] }}</td>
+                        <td>{{ row["Price"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,604 @@
+/* Center */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Aligns navigation links to the right side */
+.link-rightalign {
+    text-align: right;
+}
+
+/* Remove bullet points */
+.no-bullet {
+    list-style-type: none; 
+}
+
+/* Centering All Forms */
+.centered-form {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+/* Space btw input(forms) */
+.form-space {
+    margin-bottom: 10px;
+}
+
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+/* Hidden Navigation Menu */
+#nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nav-links.show {
+    display: flex;
+}
+
+/* CSS for Landing Page */
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding: 100px 20px;
+    text-align: center;
+    height: calc(100vh - 60px); /* Adjust height for navbar */
+}
+
+.landing-content {
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.landing-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.landing p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li a.highlight {
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.highlight:hover {
+    background-color: #0056b3;
+}
+
+/* Flash Messages */
+header div {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #ffeeba;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Footer (if applicable) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+/* Register Page */
+/* Form styling */
+.centered-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-space {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Login */
+/* Form styling */
+.centered-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-space {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Homepage */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.stock-table th, .stock-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.stock-table th {
+    background-color: #f2f2f2;
+}
+
+.center-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Quote Page */
+/* Centered Form Styling */
+.centered-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form Title Styling */
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Input Styling */
+.quote-input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Label Styling */
+.quote-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Quote Button Styling */
+.quote-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.quote-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Quoted Page */
+/* Quote Container Styling */
+.quote-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+/* Quote Content Styling */
+.quote-content {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Animation Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Buy Page */
+/* Form Title Styling */
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Input Styling */
+.buy-input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buy Button Styling */
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sell Page */
+/* Sell Container Styling */
+.sell-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+/* Select Symbol Styling */
+.select-symbol {
+    width: 150px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Input Coins Styling */
+.input-coins {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Sell Button Styling */
+.sell-button {
+    background-color: #FF5E5E;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Animation Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* History Page */
+/* History Container Styling */
+.history-container {
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Transaction Table Styling */
+.transaction-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Table Header Styling */
+.transaction-table th {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Table Body Styling */
+.transaction-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Alternating Row Color */
+.transaction-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Centering flashed message */
+.flash-header {
+    text-align: center;
+}
+
+.flash-message {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+/* Profile Page */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    margin-bottom: 30px;
+}
+
+.profile-details h2 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.details {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.details p {
+    margin-bottom: 8px;
+}
+
+.details p span {
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

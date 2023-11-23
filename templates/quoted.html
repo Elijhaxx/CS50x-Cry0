@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <div class="quote-container">
+        <p class="quote-content">Current {{ name }} ({{ justSymbol }}) coin costs {{ price }}.</p>
+        <p class="quote-content">Model Price Prediction: {{ predictedPrice }} on {{ targetDate }}</p>
+    </div>
+{% endblock %}
